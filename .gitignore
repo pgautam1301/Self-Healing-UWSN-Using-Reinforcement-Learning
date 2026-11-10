@@ -1,0 +1,38 @@
+﻿# NS-3 build files
+ns-allinone-3.41/ns-3.41/build/
+ns-allinone-3.41/ns-3.41/cmake-cache/
+ns-allinone-3.41/netanim-3.109/build/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+.DS_Store
+
+# NS-3 archive
+*.tar.bz2
+
+# Dashboard environments
+dashboard/.venv/
+dashboard/venv/
+dashboard/venv_windows/
+dashboard/__pycache__/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+*.save
+*.before-*
+*.p[0-9]
+*.p[0-9]_backup
+
+# Original NS-3 installation (use curated simulation folder)
+ns-allinone-3.41/

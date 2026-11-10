@@ -1,0 +1,143 @@
+{
+  "name": "Sparse Linear Corridor (7 Nodes)",
+  "description": "Minimal relay chain testing multi-hop latency and isolated void failure.",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Seafloor Source",
+      "type": "source",
+      "x": 50.0,
+      "y": 50.0,
+      "z": 0.0,
+      "initial_energy": 100.0,
+      "tx_range": 200.0,
+      "status": "Operational",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "name": "Relay 1",
+      "type": "sensor",
+      "x": 110.0,
+      "y": 110.0,
+      "z": 16.0,
+      "initial_energy": 100.0,
+      "tx_range": 200.0,
+      "status": "Operational",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "name": "Relay 2",
+      "type": "sensor",
+      "x": 170.0,
+      "y": 170.0,
+      "z": 32.0,
+      "initial_energy": 100.0,
+      "tx_range": 200.0,
+      "status": "Operational",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "name": "Relay 3",
+      "type": "sensor",
+      "x": 230.0,
+      "y": 230.0,
+      "z": 48.0,
+      "initial_energy": 100.0,
+      "tx_range": 200.0,
+      "status": "Operational",
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "name": "Relay 4",
+      "type": "sensor",
+      "x": 290.0,
+      "y": 290.0,
+      "z": 64.0,
+      "initial_energy": 100.0,
+      "tx_range": 200.0,
+      "status": "Operational",
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "name": "Relay 5",
+      "type": "sensor",
+      "x": 350.0,
+      "y": 350.0,
+      "z": 80.0,
+      "initial_energy": 100.0,
+      "tx_range": 200.0,
+      "status": "Operational",
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "name": "Surface Sink",
+      "type": "sink",
+      "x": 410.0,
+      "y": 410.0,
+      "z": 100.0,
+      "initial_energy": 100.0,
+      "tx_range": 200.0,
+      "status": "Operational",
+      "notes": ""
+    }
+  ],
+  "links": [
+    {
+      "u": 1,
+      "v": 2
+    },
+    {
+      "u": 1,
+      "v": 3
+    },
+    {
+      "u": 2,
+      "v": 3
+    },
+    {
+      "u": 2,
+      "v": 4
+    },
+    {
+      "u": 3,
+      "v": 4
+    },
+    {
+      "u": 3,
+      "v": 5
+    },
+    {
+      "u": 4,
+      "v": 5
+    },
+    {
+      "u": 4,
+      "v": 6
+    },
+    {
+      "u": 5,
+      "v": 6
+    },
+    {
+      "u": 5,
+      "v": 7
+    },
+    {
+      "u": 6,
+      "v": 7
+    }
+  ],
+  "metadata": {
+    "saved_at": "2026-11-10 02:28:26",
+    "node_count": 7,
+    "link_count": 11,
+    "source_id": 1,
+    "sink_id": 7
+  }
+}

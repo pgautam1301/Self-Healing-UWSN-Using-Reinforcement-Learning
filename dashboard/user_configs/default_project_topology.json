@@ -1,0 +1,311 @@
+{
+  "name": "Authoritative NS-3.41 Reflected Topology",
+  "description": "Verified 12-node inclined acoustic corridor with Sensor 5 failure at t = 50.0s.",
+  "nodes": [
+    {
+      "id": 12,
+      "name": "Source Node (Node 12)",
+      "type": "source",
+      "x": 50.0,
+      "y": 50.0,
+      "z": 0.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Seafloor application traffic generator"
+    },
+    {
+      "id": 1,
+      "name": "Sensor 1",
+      "type": "sensor",
+      "x": 90.0,
+      "y": 90.0,
+      "z": 10.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 2,
+      "name": "Sensor 2",
+      "type": "sensor",
+      "x": 130.0,
+      "y": 130.0,
+      "z": 18.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 3,
+      "name": "Sensor 3",
+      "type": "sensor",
+      "x": 170.0,
+      "y": 170.0,
+      "z": 26.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 4,
+      "name": "Sensor 4",
+      "type": "sensor",
+      "x": 210.0,
+      "y": 210.0,
+      "z": 34.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 5,
+      "name": "Sensor 5",
+      "type": "sensor_failed",
+      "x": 250.0,
+      "y": 250.0,
+      "z": 42.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Scheduled Failure at 50.0s",
+      "notes": "Scheduled failure subject"
+    },
+    {
+      "id": 6,
+      "name": "Sensor 6",
+      "type": "sensor",
+      "x": 290.0,
+      "y": 290.0,
+      "z": 50.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 7,
+      "name": "Sensor 7",
+      "type": "sensor",
+      "x": 330.0,
+      "y": 330.0,
+      "z": 58.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 8,
+      "name": "Sensor 8",
+      "type": "sensor",
+      "x": 370.0,
+      "y": 370.0,
+      "z": 66.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 9,
+      "name": "Sensor 9",
+      "type": "sensor",
+      "x": 410.0,
+      "y": 410.0,
+      "z": 74.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 10,
+      "name": "Sensor 10",
+      "type": "sensor",
+      "x": 450.0,
+      "y": 450.0,
+      "z": 82.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Intermediate acoustic relay"
+    },
+    {
+      "id": 11,
+      "name": "Surface Sink (Node 11)",
+      "type": "sink",
+      "x": 500.0,
+      "y": 500.0,
+      "z": 100.0,
+      "initial_energy": 100.0,
+      "tx_range": 250.0,
+      "status": "Operational",
+      "notes": "Surface gateway data collector"
+    }
+  ],
+  "links": [
+    {
+      "u": 1,
+      "v": 2
+    },
+    {
+      "u": 1,
+      "v": 3
+    },
+    {
+      "u": 1,
+      "v": 4
+    },
+    {
+      "u": 1,
+      "v": 5
+    },
+    {
+      "u": 1,
+      "v": 12
+    },
+    {
+      "u": 2,
+      "v": 3
+    },
+    {
+      "u": 2,
+      "v": 4
+    },
+    {
+      "u": 2,
+      "v": 5
+    },
+    {
+      "u": 2,
+      "v": 6
+    },
+    {
+      "u": 2,
+      "v": 12
+    },
+    {
+      "u": 3,
+      "v": 4
+    },
+    {
+      "u": 3,
+      "v": 5
+    },
+    {
+      "u": 3,
+      "v": 6
+    },
+    {
+      "u": 3,
+      "v": 7
+    },
+    {
+      "u": 3,
+      "v": 12
+    },
+    {
+      "u": 4,
+      "v": 5
+    },
+    {
+      "u": 4,
+      "v": 6
+    },
+    {
+      "u": 4,
+      "v": 7
+    },
+    {
+      "u": 4,
+      "v": 8
+    },
+    {
+      "u": 4,
+      "v": 12
+    },
+    {
+      "u": 5,
+      "v": 6
+    },
+    {
+      "u": 5,
+      "v": 7
+    },
+    {
+      "u": 5,
+      "v": 8
+    },
+    {
+      "u": 5,
+      "v": 9
+    },
+    {
+      "u": 6,
+      "v": 7
+    },
+    {
+      "u": 6,
+      "v": 8
+    },
+    {
+      "u": 6,
+      "v": 9
+    },
+    {
+      "u": 6,
+      "v": 10
+    },
+    {
+      "u": 7,
+      "v": 8
+    },
+    {
+      "u": 7,
+      "v": 9
+    },
+    {
+      "u": 7,
+      "v": 10
+    },
+    {
+      "u": 7,
+      "v": 11
+    },
+    {
+      "u": 8,
+      "v": 9
+    },
+    {
+      "u": 8,
+      "v": 10
+    },
+    {
+      "u": 8,
+      "v": 11
+    },
+    {
+      "u": 9,
+      "v": 10
+    },
+    {
+      "u": 9,
+      "v": 11
+    },
+    {
+      "u": 10,
+      "v": 11
+    }
+  ],
+  "metadata": {
+    "saved_at": "2026-11-10 02:28:26",
+    "node_count": 12,
+    "link_count": 38,
+    "source_id": 12,
+    "sink_id": 11
+  }
+}
